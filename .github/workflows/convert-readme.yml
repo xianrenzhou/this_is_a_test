@@ -22,12 +22,13 @@ jobs:
           mkdir -p output
           pandoc README.md -o output/index.html
 
-- name: Commit and push changes
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  run: |
-    git config --local user.email "action@github.com"
-    git config --local user.name "GitHub Action"
-    git add output/index.html
-    git commit -m "Update index.html from README.md" || echo "No changes to commit"
-    git push https://x-access-token:${GITHUB_TOKEN}@github.com/xianrenzhou/this_is_a_test.git HEAD:main
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add output/index.html
+          git commit -m "Update index.html from README.md" || echo "No changes to commit"
+          git push
+
