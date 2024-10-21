@@ -1,4 +1,4 @@
-## Hi 👋. Here is the homepage of Intelligent Cognitive Systems Laboratory (iCOST), Beijing University of Posts and Telecommunications. test
+## Hi 👋. Here is the homepage of Intelligent Cognitive Systems Laboratory (iCOST), Beijing University of Posts and Telecommunications. 
 
 <!--
 
